@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Links - Afiliado Pro</title>
+    <meta name="description" content="Acesse todos os nossos produtos recomendados em um só lugar. Links diretos para as melhores ofertas.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="links.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="links-page">
+    <div class="links-container">
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <div class="profile-avatar">
+                <img src="https://via.placeholder.com/120x120/007bff/ffffff?text=AP" alt="Afiliado Pro">
+            </div>
+            <h1>Afiliado Pro</h1>
+            <p>Produtos selecionados especialmente para você</p>
+            <div class="social-links-profile">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <!-- Links Section -->
+        <div class="links-section">
+            <div class="link-item featured">
+                <div class="link-content">
+                    <div class="link-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="link-text">
+                        <h3>Marmitas Saudáveis Premium</h3>
+                        <p>Refeições balanceadas e nutritivas</p>
+                    </div>
+                </div>
+                <a href="produto1.html" class="link-button" onclick="trackLinkClick('marmitas')">
+                    Acessar <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="link-item">
+                <div class="link-content">
+                    <div class="link-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="link-text">
+                        <h3>Curso Digital de Sucesso</h3>
+                        <p>Transforme sua vida profissional</p>
+                    </div>
+                </div>
+                <a href="produto2.html" class="link-button" onclick="trackLinkClick('curso')">
+                    Acessar <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="link-item">
+                <div class="link-content">
+                    <div class="link-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <div class="link-text">
+                        <h3>Suplemento Natural</h3>
+                        <p>Melhore sua qualidade de vida</p>
+                    </div>
+                </div>
+                <a href="produto3.html" class="link-button" onclick="trackLinkClick('suplemento')">
+                    Acessar <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="link-item special">
+                <div class="link-content">
+                    <div class="link-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <div class="link-text">
+                        <h3>Ofertas Especiais</h3>
+                        <p>Descontos exclusivos por tempo limitado</p>
+                    </div>
+                </div>
+                <a href="#" class="link-button" onclick="trackLinkClick('ofertas')">
+                    Ver Ofertas <i class="fas fa-fire"></i>
+                </a>
+            </div>
+
+            <div class="link-item">
+                <div class="link-content">
+                    <div class="link-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="link-text">
+                        <h3>Newsletter Exclusiva</h3>
+                        <p>Receba dicas e ofertas primeiro</p>
+                    </div>
+                </div>
+                <a href="#newsletter" class="link-button" onclick="trackLinkClick('newsletter')">
+                    Cadastrar <i class="fas fa-bell"></i>
+                </a>
+            </div>
+
+            <div class="link-item">
+                <div class="link-content">
+                    <div class="link-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="link-text">
+                        <h3>Fale Conosco</h3>
+                        <p>Tire suas dúvidas pelo WhatsApp</p>
+                    </div>
+                </div>
+                <a href="https://wa.me/5511999999999" class="link-button" onclick="trackLinkClick('whatsapp')" target="_blank">
+                    WhatsApp <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+
+            <div class="link-item">
+                <div class="link-content">
+                    <div class="link-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="link-text">
+                        <h3>Site Completo</h3>
+                        <p>Visite nosso site principal</p>
+                    </div>
+                </div>
+                <a href="index.html" class="link-button" onclick="trackLinkClick('site')">
+                    Visitar <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div id="newsletter" class="newsletter-signup">
+            <h3>📧 Newsletter Exclusiva</h3>
+            <p>Seja o primeiro a saber sobre novos produtos e ofertas especiais!</p>
+            <form class="newsletter-form-links">
+                <input type="email" placeholder="Seu melhor e-mail" required>
+                <button type="submit" class="btn-newsletter">Cadastrar</button>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <div class="links-footer">
+            <p>&copy; 2025 Afiliado Pro - Todos os direitos reservados</p>
+            <div class="footer-links">
+                <a href="privacidade.html">Privacidade</a>
+                <a href="termos.html">Termos</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Rastreamento de cliques nos links
+        function trackLinkClick(linkType) {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'click', {
+                    'event_category': 'Links Page',
+                    'event_label': linkType
+                });
+            }
+            console.log('Link clicado:', linkType);
+        }
+
+        // Newsletter form
+        document.querySelector('.newsletter-form-links').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            
+            // Rastrear cadastro na newsletter
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'newsletter_signup', {
+                    'event_category': 'Engagement',
+                    'event_label': 'Links Page'
+                });
+            }
+            
+            alert('E-mail cadastrado com sucesso! Você receberá nossas ofertas exclusivas.');
+            this.reset();
+        });
+
+        // Animações de entrada
+        document.addEventListener('DOMContentLoaded', () => {
+            const linkItems = document.querySelectorAll('.link-item');
+            
+            linkItems.forEach((item, index) => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>
+

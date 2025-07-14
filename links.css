@@ -1,0 +1,342 @@
+/* Estilos específicos para a página de links */
+.links-page {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+.links-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Profile Section */
+.profile-section {
+    text-align: center;
+    margin-bottom: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-avatar {
+    margin-bottom: 1rem;
+}
+
+.profile-avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    object-fit: cover;
+}
+
+.profile-section h1 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.profile-section p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-links-profile {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links-profile a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.social-links-profile a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+}
+
+/* Links Section */
+.links-section {
+    margin-bottom: 2rem;
+}
+
+.link-item {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.link-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.link-item.featured {
+    background: linear-gradient(135deg, #007bff, #28a745);
+    color: white;
+}
+
+.link-item.featured .link-text h3,
+.link-item.featured .link-text p {
+    color: white;
+}
+
+.link-item.special {
+    background: linear-gradient(135deg, #ffc107, #ff6b35);
+    color: white;
+    animation: pulse 2s infinite;
+}
+
+.link-item.special .link-text h3,
+.link-item.special .link-text p {
+    color: white;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+.link-content {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.link-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #007bff, #28a745);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.link-item.featured .link-icon,
+.link-item.special .link-icon {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.link-text h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.link-text p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+}
+
+.link-button {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+}
+
+.link-button:hover {
+    background: linear-gradient(135deg, #0056b3, #004085);
+    transform: translateX(5px);
+}
+
+.link-item.featured .link-button,
+.link-item.special .link-button {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.link-item.featured .link-button:hover,
+.link-item.special .link-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Newsletter Signup */
+.newsletter-signup {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.newsletter-signup h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.newsletter-signup p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.newsletter-form-links {
+    display: flex;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.newsletter-form-links input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.newsletter-form-links input:focus {
+    border-color: #007bff;
+}
+
+.btn-newsletter {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-newsletter:hover {
+    background: linear-gradient(135deg, #0056b3, #004085);
+    transform: translateY(-2px);
+}
+
+/* Footer */
+.links-footer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 1rem 0;
+}
+
+.footer-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .links-container {
+        padding: 0 15px;
+    }
+    
+    .profile-section {
+        padding: 1.5rem;
+    }
+    
+    .profile-avatar img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .profile-section h1 {
+        font-size: 1.8rem;
+    }
+    
+    .link-item {
+        padding: 1rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .link-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .link-icon {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    .newsletter-form-links {
+        flex-direction: column;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .links-page {
+        padding: 10px 0;
+    }
+    
+    .profile-section {
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+    }
+    
+    .link-item {
+        margin-bottom: 0.8rem;
+        padding: 1rem;
+    }
+    
+    .newsletter-signup {
+        padding: 1.5rem;
+    }
+}
+
